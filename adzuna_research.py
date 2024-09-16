@@ -9,7 +9,6 @@ import pandas as pd
 
 ADZUNA_APP_ID = os.getenv('ADZUNA_APP_ID')
 ADZUNA_APP_KEY = os.getenv('ADZUNA_APP_KEY')
-BUCKET = "adzuna-etl-project-bucket"
 
 # Define the API endpoint and base parameters
 url = "https://api.adzuna.com/v1/api/jobs/ca/search/"
