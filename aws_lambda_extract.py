@@ -73,7 +73,7 @@ def lambda_handler(event, context):
     file_name = f"adzuna_raw_data_{current_timestamp}.json"
     logger.info(f"File name to store raw data: {file_name}")
     
-    # Storing Spotify json raw data to AWS S3
+    # Storing Adzuna json raw data to AWS S3
     logger.info("Storing Adzuna json raw data to AWS S3")
     client = boto3.client('s3')
     file_key = f"raw_data/to_process/{file_name}"
