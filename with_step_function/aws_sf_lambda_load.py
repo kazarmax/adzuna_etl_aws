@@ -93,7 +93,7 @@ def move_s3_object(bucket, source_key, destination_key):
 
 def lambda_handler(event, context):
     # Get the S3 object key from the Step Function input
-    s3_object = event['s3ObjectKey']  # Input from previous function (Step Function)
+    s3_object = event['s3ObjectKeyTransformed']  # Input from previous function (Step Function)
     
     s3_bucket = "adzuna-etl-project" 
     s3_uri = f's3://{s3_bucket}/{s3_object}'
